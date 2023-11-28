@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  /* Estilo da parte da barra que arrasta*/
+  ::-webkit-scrollbar-thumb {
+    background-color: #2e2c2c; 
+    border-radius: 6px; 
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+
+
+/*Estilo geral da página*/
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+/*Estilo da barra de navegação*/
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container{
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo{
+    font-family: 'Kdam Thmor Pro', sans-serif; /*Fonto do nome do site*/
+    font-size: 40px;
+    color: red;
+}
+
+.menu-container{
+    flex: 6;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item{
+    margin-right: 30px;
+}
+
+.menu-list-item.active{
+    font-weight: bold ; /*Item do menu que está sendo visto fica em negrito (Nesse caso o "Início")*/
+}
+
+.profile-container{
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-text-container{
+    margin: 0 20px;
+}
+
+/*Estilo da foto de perfil*/
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%; /*Arredonda a imagem*/
+    object-fit: cover;
+}
+
+/*Estilo do botão de modo escuro*/
+.toggle{
+    width: 40px;
+    height: 20px;
+    background-color: rgb(93, 72, 72);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.toggle-icon{
+    color: gold;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s ease-in-out;
+}
+
+/*Estilo da barra lateral*/
+.sidebar{
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed; /*Faz com que a barra não se mova junto com a rolagem*/
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.left-menu-icon{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 45px;
+}
+
+.container{
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+}
+
+.content-container{
+    margin-left: 50px;
+}
+
+.featured-content{
+    height: 50vh;
+    padding: 50px;
+
+}
+
+.featured-title{
+    width: 200px;
+
+}
+
+.featured-desc{
+    width: 500px;
+    color: rgb(211, 211, 211);
+    margin: 30px 0;
+}
+
+.featured-button{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.movie-list-container{
+    padding: 0 20px;
+}
+
+.movie-list-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-list{
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+}
+
+.movie-list-item{
+    margin-right: 30px;
+    position: relative;
+}
+
+/*Estilo para diminuir a opacidade ao colocar o mouse em cima da foto do filme*/
+.movie-list-item:hover .movie-list-item-img{
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+}
+
+/*Estilo para que o nome e a descrição do filme apareçam ao colocar o mouse em cima da foto*/
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button{
+    opacity: 1;
+}
+
+/*Quadrado da foto do filme*/
+.movie-list-item-img{
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.4s ease-in-out;
+    border-radius: 10px;
+}
+
+/*Titulo do filme*/
+.movie-list-item-title{
+    background-color: #333333e0;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+/*Descrição do filme*/
+.movie-list-item-desc{
+    background-color: rgba(51, 51, 51, 0.859);
+    border-radius: 10px;
+    padding:10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+/*Botão do "Assista agora"*/
+.movie-list-item-button{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+/*Flecha para mover o carrossel*/
+.arrow{
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/*Estilos para configurar modo claro*/
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+.navbar-container.active{
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.acitve{
+    background-color: rgb(255, 255, 255);
+}
+
+.toggle-ball.active{
+    background-color: rgb(0, 0, 0);
+    transform: translateX(-20px);
+}
+
+
+/*Responsividade*/
+@media only screen and (max-width: 940px){
+    .menu-container{
+        display: none;
+    }
+}

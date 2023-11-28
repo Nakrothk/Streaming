@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinebox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon3.jpeg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7993da10b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar (Header de cima da página)-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Cinebox</h1> <!--Nome do site-->
+            </div>
+
+            <!--Menu principal de cima-->
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <a href="index.html"><li class="menu-list-item active">Início</li></a>
+                    <a href="filmes.html"><li class="menu-list-item">Filmes</li></a>
+                    <a href="series.html"><li class="menu-list-item">Séries</li></a>
+                </ul>
+            </div>
+
+                <!--Botão de modo escuro/claro-->
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Menu lateral icones (Sidebar)-->
+    <div class="sidebar">
+        <i class="left-menu-icon fa-solid fa-house"></i> <!--Em outras paginas esse icone fica dentro de um <a> para enviar ao inicio-->
+        <a href="login.html"><i class="left-menu-icon fa-solid fa-user"></i> </a> <!--Leva para a tela de cadastro/login-->
+    </div>
+
+    <!--Conteúdo da página principal-->
+
+    <!--Filme em destaque (Banner Maior)-->
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/itbg3.png');">
+                <img class="featured-title" src="img/itlogo.png" alt="">
+                <p class="featured-desc">Um grupo de amigos de Derry, Maine, enfrenta uma ameaça sobrenatural que retorna a cada 27 anos para aterrorizar a cidade. A ameaça é Pennywise, um palhaço demoníaco que assume as formas dos medos mais profundos de suas vítimas.</p>
+                <a href="it.html"><button style="cursor: pointer;" class="featured-button">Assista agora</button></a>
+            </div>
+
+            <!--Filmes menores em carrossel-->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Novidades</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/strangerthings.png" alt="">
+                            <span class="movie-list-item-title">Stranger Things</span> <!--Nome do filme/série-->
+                            <p class="movie-list-item-desc">Em uma pequena cidade da Indiana, um grupo de amigos se une para investigar o desaparecimento de um dos integrantes da turma.</p> <!--Descrição do filme/série-->
+                            <a href="st.html"><button class="movie-list-item-button">Assista</button></a> <!--Botão para assistir-->
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/fivenights.png" alt="">
+                            <span class="movie-list-item-title">FNAF</span>
+                            <p class="movie-list-item-desc">Um grupo de funcionários de um restaurante de fast food se torna alvo de animatrônicos assassinos.</p>
+                            <a href="fnaf.html"><button class="movie-list-item-button">Assista</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/themarvels.png" alt="">
+                            <span class="movie-list-item-title">The Marvels</span>
+                            <p class="movie-list-item-desc">Kamala Khan, uma adolescente paquistanesa-americana, descobre que tem poderes sobre-humanos.</p>
+                            <a href="themarvels.html"><button class="movie-list-item-button">Assista</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/blackmirror.png" alt="">
+                            <span class="movie-list-item-title">Black Mirror</span>
+                            <p class="movie-list-item-desc">Uma série de antologias que explora os perigos da tecnologia moderna. Cada episódio conta uma história diferente sobre a tecnologia.</p>
+                            <a href="blackmirror.html"><button class="movie-list-item-button">Assista</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/chucky.png" alt="">
+                            <span class="movie-list-item-title">Chucky</span>
+                            <p class="movie-list-item-desc">Um boneco possuído pelo espírito de um serial killer volta à vida e começa a aterrorizar uma cidade.</p>
+                            <a href="chucky.html"><button class="movie-list-item-button">Assista</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/ldp.png" alt="">
+                            <span class="movie-list-item-title">LDP</span>
+                            <p class="movie-list-item-desc">Um grupo de ladrões planeja o roubo do Banco da Espanha. Eles usam máscaras de Salvador Dalí e se identificam como Professor para realizar o crime</p>
+                            <a href="ldp.html"><button class="movie-list-item-button">Assista</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/mrrobot.png" alt="">
+                            <span class="movie-list-item-title">Mr Robot</span>
+                            <p class="movie-list-item-desc">Elliot Alderson é um engenheiro de segurança cibernética que sofre de transtorno de ansiedade social. Ele é recrutado por um grupo de hackers para derrubar um grande banco.</p>
+                            <a href="mrrobot.html"><button class="movie-list-item-button">Assista</button></a>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/theboys.png" alt="">
+                            <span class="movie-list-item-title">The Boys</span>
+                            <p class="movie-list-item-desc">Um grupo de vigilantes se une para combater super-heróis corruptos. Eles usam violência e métodos não convencionais para fazer justiça.</p>
+                            <a href="theboys.html"><button class="movie-list-item-button">Assista</button></a>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <!--Sessão do carrossel "Em alta"-->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Em alta</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/insidbg.png');">
+                <img class="featured-title" src="img/insidiouslogo.png" alt="">
+                <p class="featured-desc">Insidious é um filme de terror de 2010 dirigido por James Wan e escrito por Leigh Whannell. O filme conta a história de uma família que se muda para uma nova casa e, logo depois, um dos filhos entra em coma inexplicavelmente. Os pais da criança começam a investigar o caso e descobrem que o problema não está na casa, mas sim em um mundo paralelo chamado "O Além".</p>
+                <a href="insidious.html"><button class="featured-button">Assista agora</button></a>
+            </div>
+
+            <!--Sessão do carrossel "Filmes"-->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Séries</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+            <!--Sessão do carrossel "Para a família"-->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Para a família</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Link para o JavaScript-->
+    <script src="app.js"></script>
+</body>
+</html>

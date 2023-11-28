@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinebox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon3.jpeg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7993da10b8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Navbar (Header de cima da página)-->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">Cinebox</h1> <!--Nome do site-->
+            </div>
+
+            <!--Menu principal de cima-->
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <a href="index.html"><li class="menu-list-item">Início</li></a>
+                    <a href="filmes.html"><li class="menu-list-item active">Filmes</li></a>
+                    <a href="series.html"><li class="menu-list-item">Séries</li></a>
+                </ul>
+            </div>
+
+                <!--Botão de modo escuro/claro-->
+                <div class="toggle">
+                    <i class="fa-solid fa-moon toggle-icon"></i>
+                    <i class="fa-solid fa-sun toggle-icon"></i>
+                    <div class="toggle-ball">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Menu lateral icones (Sidebar)-->
+    <div class="sidebar">
+        <a href="index.html"><i class="left-menu-icon fa-solid fa-house"></i></a> <!--Em outras paginas esse icone fica dentro de um <a> para enviar ao inicio-->
+        <a href="login.html"><i class="left-menu-icon fa-solid fa-user"></i> </a> <!--Leva para a tela de cadastro/login-->
+    </div>
+
+    <!--Conteúdo da página principal-->
+
+    <!--Filme em destaque (Banner Maior)-->
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content" style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/openheimer.png');">
+                <h1>Openheimer</h1>
+                <p class="featured-desc">O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>
+                <button style="cursor: pointer;" class="featured-button">Assistir filme!</button>
+            </div>
+
+            <!--Filmes menores em carrossel-->
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Se você gostou de Openheimer, Assista também:</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span> <!--Nome do filme/série-->
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p> <!--Descrição do filme/série-->
+                            <a href="st.html"><button class="movie-list-item-button">Assista</button></a> <!--Botão para assistir-->
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.png" alt="">
+                            <span class="movie-list-item-title">Exemplo</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus itaque, exercitationem</p>
+                            <button class="movie-list-item-button">Assista</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Link para o JavaScript-->
+    <script src="app.js"></script>
+</body>
+</html>

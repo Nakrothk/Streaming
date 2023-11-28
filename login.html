@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <title>Tela de Login</title>
+        <link rel="stylesheet" href="login.css">
+        <link rel="icon" href="img/favicon3.jpeg" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/baa6bf26e2.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+   <div class="container">
+    <div class="form-box">
+        <h1 id="title">Cadastre-se</h1>
+        <form>
+            <div class="imput-group">
+                <div class="input-field" id="nameField">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Nome">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Email">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Senha">
+                </div>
+                <p>Esqueci a Senha <a href="#">Clique aqui!</a></p>
+            </div>
+            <div class="btn-field">
+                <button type="button" id="signupBtn">Registre-se</button>
+                <button type="button" id="signinBtn" class="disable">Entrar</button>
+            </div>
+        </form>
+    </div>
+   </div>
+
+  <script>
+
+let signupBtn = document.getElementById(signupBtn);
+let signinBtn = document.getElementById(signinBtn);
+let nameField = document.getElementById(nameField);
+let title = document.getElementById(title);
+
+
+signinBtn.onclick = function(){
+    nameField.style.maxHeight = "0";
+    title.innerHTML = "Sign in";
+    signupBtn.classList.add("disable")
+    signinBtn.classList.remove("disable")
+}
+signupBtn.onclick = function(){
+    nameField.style.maxHeight = "60px";
+    title.innerHTML = "Sign Up";
+    signupBtn.classList.remove("disable")
+    signinBtn.classList.add("disable")
+
+}
+
+  </script>      
+    </body>
+</html>
